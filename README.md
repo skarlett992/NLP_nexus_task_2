@@ -67,41 +67,41 @@ zipp==3.5.0
 
 1. A detailed solution which describes "How you would solve the problem", include URLs of web pages, articles, code repositories you will use.
 
-Разработана программа на основе библиотеки OCR и алгоритма пост-модерации NTLK. На этапе проектирования реализации пользовалась официальной документацией библиотеки pytesseract:
+A program has been developed based on the OCR library and the NTLK post-moderation algorithm. At the design stage of the implementation, I used the official documentation of the library pytesseract:
 https://tesseract-ocr.github.io/tessdoc/
-и ссылкой на научные статьи с описанием подхода NTLK:
+and a link to scientific articles describing the approach of NTLK:
 https://openaccess.thecvf.com/content/CVPR2021/papers/Dai_Progressive_Contour_Regression_for_Arbitrary-Shape_Scene_Text_Detection_CVPR_2021_paper.pdf
 https://www.nltk.org/
 
 
 2. What kind of data and how much data you would require from the client and provide guidelines on how to make the data & how to annotate data.
 
-Для последующего развития программы потребуется ее дообучения. Большой прирост в точности может дать внедрение типов документов для их классификации и разметки областей под ФИО, номера документов, а также привязку к языку ввода данных.
+Further development of the program will require additional training. A large increase in accuracy can be provided by the introduction of document types for their classification and marking of areas under the full name, document numbers, as well as binding to the data entry language.
 
 3. Some results which you got with your strategy testing
-Результатом моей работы является программа,которая может: 
-1) находить фотографию лица человека в документе,
-2) распознавать текст в документе
-3) выделять из распознанного текста ФИО человека
+The result of my work is a program that can:
+1) find a photograph of a person's face in a document,
+2) recognize text in a document
+3) select the person's full name from the recognized text
 
-Данное решение позволяет автоматически распознавать язык текста. Программа реализует работу через консоль ввода-вывода операционной системы.
+This solution allows you to automatically recognize the language of the text. The program implements work through the I / O console of the operating system.
 
 4. And How much data you required for training (If your solution requires it)
 
-Использовалась подготовленные тренировочные модели-ocr tessdata:
+Prepared training ocr-models were used tessdata:
 https://github.com/tesseract-ocr/tessdata
 
 5. Describe how to build training/testing data (e.g. tools for annotation )
 6. If you use any of the pre-trained models, use the model with the data sample ( you need to find something on the web ) and provide the result.
 
-Использовалась подготовленные тренировочные модели-ocr tessdata:
+Prepared training ocr-models were used tessdata:
 https://github.com/tesseract-ocr/tessdata
 
-Для тестирования использовались штучные наборы данных для написания сценариев сохранения результата
+For testing, we used piece data sets to write scripts for saving the result.
 
 7. Provide a timeline if you work on it only by yourself. (How many days/months you need, what kind of results you can promise to deliver
 
-График занятотости: частичная занятость. Срок самостоятельной реализации (с учетом текущей информации представленной в условии постановки задачи): 1 год
+Employment schedule: part-time. The term of independent implementation (taking into account the current information provided in the condition of the problem statement): 1 year
 
 8. Provide sample code you use ( code repository or jupyter notebook file )
 
